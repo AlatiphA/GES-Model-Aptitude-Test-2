@@ -1,6 +1,6 @@
 {
-  "name": "AlatiphA BECE ICT Pasco",
-  "short_name": "BECE ICT Pasco",
+  "name": "AlatiphA ICT for JHS",
+  "short_name": "ICT for JHS",
   "start_url": "./index.html?ict=true",
   "scope": "./",
   "display": "standalone",
