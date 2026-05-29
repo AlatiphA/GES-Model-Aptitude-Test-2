@@ -1,4 +1,4 @@
-const CACHE_NAME = "alatipha-ictforjhs-v3";
+const CACHE_NAME = "alatipha-ictforjhs-v4";
 
 const FILES_TO_CACHE = [
 
