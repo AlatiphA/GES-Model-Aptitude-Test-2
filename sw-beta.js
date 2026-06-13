@@ -1,5 +1,5 @@
 /* =====================================================
-   AlatiphA GES Pasco — Service Worker
+   AlatiphA EPUB — Service Worker
    ─────────────────────────────────────────────────
    HOW TO UPDATE:
    Bump APP_VERSION on every release (e.g. "1.0.1").
@@ -8,18 +8,18 @@
 ===================================================== */
 
 const APP_VERSION  = "v2.3.0";
-const CACHE_NAME   = `alatipha-ges-pasco-${APP_VERSION}`;
+const CACHE_NAME   = `alatipha-ges-mat2-${APP_VERSION}`;
 
 const FILES_TO_CACHE = [
   "./",
   "./index.html",
   "./style.css",
   "./app.js",
-  "./sw-beta.js",
-  "./manifest-beta.json",
+  "./sw-mat2.js",
+  "./manifest-mat2.json",
   "./library/sample.epub",
-  "./icon-beta-192.png",
-  "./icon-beta-512.png",
+  "./icon-mat2-192.png",
+  "./icon-mat2-512.png",
 ];
 
 /* =========================
