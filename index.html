@@ -10,7 +10,7 @@
   />
 
   <title>
-    ICT for JHS
+    GES Promotion Aptitude Test
   </title>
 
   <link
@@ -20,7 +20,7 @@
 
   <!-- Android -->
   <link rel="manifest"
-    href="./manifest-ict.json"
+    href="./manifest-beta.json"
   />
   
   <meta 
@@ -30,7 +30,7 @@
 
   <!-- iPhone -->
   <link rel="apple-touch-icon"
-    href="icon-ict-192.png"
+    href="icon-beta-192.png"
   >
 
   <meta
@@ -60,15 +60,15 @@
     </button>
 
     <h1 class="title">
-      ICT for JHS 
+      GES Promotion Aptitude Test
     </h1>
 
     <button
       id="themeBtn"
       class="iconBtn"
-      aria-label="Toggle Theme"
+      aria-label="Change Theme"
     >
-      ☀
+      🎨
     </button>
 
   </header>
@@ -77,7 +77,51 @@
     id="sidebar"
     class="sidebar"
   >
-    <div id="toc"></div>
+
+    <!-- Tab Buttons -->
+    <div class="sidebarTabs">
+      <button class="sidebarTab active" data-tab="toc">Contents</button>
+      <button class="sidebarTab" data-tab="bookmarks">Bookmarks</button>
+    </div>
+
+    <!-- Contents Panel -->
+    <div id="tocPanel" class="tabPanel active">
+      <div id="toc" class="tocContainer"></div>
+    </div>
+
+    <!-- Bookmarks Panel -->
+    <div id="bookmarksPanel" class="tabPanel">
+      <div id="bookmarksList"></div>
+    </div>
+
+
+  <!-- About --> 
+  <div class="aboutSection">
+
+  <img
+    src="icon-beta-192.png"
+    alt="GES Pasco Icon"
+    class="aboutIcon"
+  >
+
+  <div class="aboutText">
+
+    <strong>
+      GES Promotion Test Pasco
+    </strong>
+
+    <br>
+
+    ©️ All Rights Reserved | 2026 Edition · <span id="appVersion">v1.0.0</span>
+
+    <br>
+
+    Developed by Abdul-Latif Ahmed [AlatiphA]
+
+  </div>
+
+</div>
+  
   </aside>
 
   <main>
@@ -85,27 +129,18 @@
   <div id="viewer"></div>
 
   <div id="navOverlay">
-
-    <div
-      id="leftZone"
-      class="navZone"
-    ></div>
-
-    <div
-      id="centerZone"
-      class="navZone"
-    ></div>
-
-    <div
-      id="rightZone"
-      class="navZone"
-    ></div>
-
+    <div id="leftZone"   class="navZone"></div>
+    <div id="centerZone" class="navZone"></div>
+    <div id="rightZone"  class="navZone"></div>
   </div>
 
   </main>
 
+  <!-- Permanent info bar — always visible -->
+  <div id="readingInfo"></div>
+
   <footer>
+  
 
   <div class="topFooter">
 
@@ -137,6 +172,7 @@
     </button>
 
   </div>
+    
 
   <div class="bottomFooter">
 
@@ -157,11 +193,10 @@
     </button>
 
     <button
-      id="searchBtn"
+      id="bookmarkBtn"
       class="bottomBtn"
-      aria-label="Search"
     >
-      🔍
+     🔖
     </button>
 
     <button
@@ -173,12 +208,13 @@
     </button>
 
     <button
-      id="bottomThemeBtn"
+      id="searchBtn"
       class="bottomBtn"
-      aria-label="Theme"
+      aria-label="Search"
     >
-      ☀
+      🔍
     </button>
+
 
   </div>
 
@@ -204,6 +240,31 @@
 
   </div>
 
+</div>
+
+<!-- Theme Picker Panel -->
+<div id="themePicker" class="themePicker">
+  <div class="themePickerInner">
+    <span class="themePickerLabel">Theme</span>
+    <div class="themeOptions">
+      <button class="themeOption" data-theme="light">
+        <span class="themeSwatchWrap light"><span class="themeSwatch"></span></span>
+        <span>Light</span>
+      </button>
+      <button class="themeOption" data-theme="dark">
+        <span class="themeSwatchWrap dark"><span class="themeSwatch"></span></span>
+        <span>Dark</span>
+      </button>
+      <button class="themeOption" data-theme="sepia">
+        <span class="themeSwatchWrap sepia"><span class="themeSwatch"></span></span>
+        <span>Sepia</span>
+      </button>
+      <button class="themeOption" data-theme="night">
+        <span class="themeSwatchWrap night"><span class="themeSwatch"></span></span>
+        <span>Night</span>
+      </button>
+    </div>
+  </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
