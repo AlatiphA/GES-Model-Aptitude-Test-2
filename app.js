@@ -149,10 +149,10 @@ if (versionEl)
     "v" + APP_VERSION;
 
 const READER_DATA_KEY =
-  "regular-ges-pasco-data";
+  "model-aptitude-test2-data";
 
 const BOOKMARKS_KEY =
-  "regular-ges-pasco-bookmarks";
+  "model-aptitude-test2-bookmarks";
 
 
 /* =========================
@@ -1795,7 +1795,7 @@ if (
         await navigator
           .serviceWorker
           .register(
-            "./sw-regular.js"
+            "./sw-mat2.js"
           );
 
       }
