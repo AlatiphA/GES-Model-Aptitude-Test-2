@@ -1,5 +1,5 @@
 /* =====================================================
-   GES Pasco — Service Worker
+   Model Aptitude Test — Service Worker
    ─────────────────────────────────────────────────
    HOW TO UPDATE:
    Bump APP_VERSION on every release (e.g. "1.0.1").
@@ -8,7 +8,7 @@
 ===================================================== */
 
 const APP_VERSION  = "v3.1.6";
-const CACHE_NAME   = `alatipha-ges-pasco-${APP_VERSION}`;
+const CACHE_NAME   = `model-aptitude-test2-${APP_VERSION}`;
 
 /* ====================
    APP SHELL
