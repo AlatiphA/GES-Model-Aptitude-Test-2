@@ -170,10 +170,10 @@ if (versionEl)
     "v" + APP_VERSION;
 
 const READER_DATA_KEY =
-  "model-aptitude-test-data";
+  "model-aptitude-test2-data";
 
 const BOOKMARKS_KEY =
-  "model-aptitude-test-bookmarks";
+  "model-aptitude-test2-bookmarks";
 
 
 /* =========================
@@ -2013,7 +2013,7 @@ if (
         await navigator
           .serviceWorker
           .register(
-            "./sw-mat.js"
+            "./sw-mat2.js"
           );
 
       }
