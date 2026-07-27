@@ -170,10 +170,10 @@ if (versionEl)
     "v" + APP_VERSION;
 
 const READER_DATA_KEY =
-  "ges-mat-data";
+  "ges-mat2-data";
 
 const BOOKMARKS_KEY =
-  "ges-mat-bookmarks";
+  "ges-mat2-bookmarks";
 
 
 /* =========================
@@ -2031,7 +2031,7 @@ if (
         await navigator
           .serviceWorker
           .register(
-            "./sw-mat.js"
+            "./sw-mat2.js"
           );
 
       }
